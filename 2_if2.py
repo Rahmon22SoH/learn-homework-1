@@ -14,13 +14,21 @@
   и выводя на экран результаты
 
 """
+first_line = 'work python python python'
+second_line = 'moscow learn python'
+def determine_age(str1, str2):
+    if type(str1 and str2) != str:
+        print(0)
+    if str1 != str2 and " learn " in (" " + str2 + " "):
+        print(3)
+    if str1 != str2 and len(str1) > len(str2):
+        print(2)
+    elif str1 == str2:
+        print(1)
 
-def main():
-    """
-    Эта функция вызывается автоматически при запуске скрипта в консоли
-    В ней надо заменить pass на ваш код
-    """
-    pass
-    
-if __name__ == "__main__":
-    main()
+determine = determine_age(first_line, second_line)
+determine2 = determine_age( 0 , 'learn python')
+print(determine)
+print(determine2)
+
+

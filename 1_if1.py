@@ -13,13 +13,21 @@
 * Вывести содержимое переменной на экран
 
 """
+persons_age = int(input("Ввидите свой возраст "))
 
-def main():
-    """
-    Эта функция вызывается автоматически при запуске скрипта в консоли
-    В ней надо заменить pass на ваш код
-    """
-    pass
+def determine_age(age):
+  age = abs(age)
+  if age >= 0 and age <= 5:
+    print('В детском саду')
+  elif age >= 6 and age <= 17:
+    print('Учиться в школе')
+  elif age >= 18 and age <= 23:
+    print('Учиться в вузе')
+  elif age >= 24 and age <= 65:
+    print('Работает')
+  
 
-if __name__ == "__main__":
-    main()
+definition = determine_age(persons_age)
+print(definition)
+
+
